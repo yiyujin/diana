@@ -1,0 +1,359 @@
+<html>
+<head>
+    <!-- 이 부분은 디폴트 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Cub 다이애나, 그녀는 누구인가</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="fabicon.jpg" />
+    
+    <!-- og tag -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://yujin.design" />
+    <meta property="og:title" content="yiyu.design" />
+    <meta property="og:description" content="yi-yujin's portfolio" />
+    <meta property="og:image" content="https://agitated-hugle-e5369f.netlify.com/src/thumbnail.jpg" />
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="default.css"> -->
+
+    <style>
+    *{background-position: center; background-size: cover; background-repeat: no-repeat; margin:0; font-family: "Apple SD Gothic Neo";}
+
+    .mySlides{width:100%; height:100%;}
+
+    #diana1{background-image: url("diana1.jpg");}
+    #diana2{background-image: url("diana2.jpg");}
+    #diana3{background-image: url("diana3.jpg");}
+    #diana4{background-image: url("diana4.jpg");}
+    #diana5{background-image: url("diana5.jpg");}
+    #diana6{background-image: url("diana6.jpg");}
+
+
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+    from {opacity: .7} 
+    to {opacity: 1}
+    }
+
+    @keyframes fade {
+    from {opacity: .7} 
+    to {opacity: 1}
+    }
+
+    .maintext{
+        position: absolute;
+
+        z-index: 100;
+
+        width: 100%;
+
+        text-align: center;
+
+        top: 40%;
+    }
+
+    .maintext h1, .maintext p{
+        color:white;
+
+        /* margin-left: 500px;
+        margin-right: 500px; */
+
+        width: 50%;
+        margin:auto;
+
+    }
+
+    #maintitle{
+        font-size: 60px;
+
+        /* font shadow effect: x, y, blur, color */
+        text-shadow:2px 2px 8px #3d3d3d; 
+    }
+    #subtitle{font-size: 20px; font-weight: 100; line-height: 1.5;}
+
+    .blackpaper{
+        background-color: black;
+        opacity: 0.5;
+
+        position: absolute;
+        z-index:80;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .logofix{
+        position:fixed;
+        z-index: 300;
+
+        width: 100%;
+        height: 30px;
+
+        background-color: black;
+
+        text-align: left;
+    }
+
+    .logofix p{
+        color:gray;
+        margin-left: 20px;
+    }
+
+    .treemap{
+        width:100%;
+        height:100%;
+    }
+
+    ul{
+        border: .2px solid #d6d6d6;
+        background-color: #f6f6f6;
+
+        width: 50%;
+        height: 60px;
+
+        display: flex;
+
+        margin:auto;
+
+        margin-bottom:100px;
+    }
+
+    li{
+        list-style-type: none;
+
+        margin: 20px;
+
+        font-size: 12px;
+    }
+
+    li:nth-child(5){
+        color: blue;
+        font-weight: 600;
+
+        margin-left: 20px;
+    }
+
+    .footer{
+        position: relative;
+        text-align: center;
+        margin-right: 300px;
+    }
+
+    #b_pickme{
+        /* center button*/
+        position: absolute;
+
+        width: 300px;
+        height: 70px;
+        border-radius: 40px;
+        background-color:#333333;
+        box-shadow: 10 5 5 blue;
+        border:none;
+
+        color:white;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .treemap{
+        /* width: 100%;
+        height: 2000px; */
+
+        height: auto;
+
+        background-image: url("treemap.jpg");
+    }
+
+    .treemaptext{
+        position: absolute;
+        z-index: 100;
+
+        margin-top: 100px;
+        left: 20%;
+        right: 60%;
+    }
+
+    .treemaptext h1{
+        font-size: 50px;
+    }
+
+    .treemaptext p{
+        font-weight: 300;
+
+        line-height: 30px;
+    }
+    
+    .boldp{
+        font-weight: 900 !important;
+    }
+
+    #b_main{
+        display: block;
+        border:none;
+        background:none;
+
+        width: 30px;
+        height: 50px;
+
+        background-image: url("mouse_icon.png");
+
+        background-size: contain !important;
+        background-repeat: no-repeat;
+
+        /* center */
+        margin-left: 50%; 
+        margin-top: 20%;
+
+        bottom: 100px !important;
+
+        /* 이걸 해줘야 둥실효과 먹힘 */
+        position: absolute;
+    }
+
+    /* button 둥실 효과 */
+    #b_main{
+        animation-name: main;
+        animation-duration:1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        }
+
+        @-webkit-keyframes main{
+            0%{
+                top: 50px;
+            }
+            100% {
+                top:70px;
+            }
+        }
+
+        /* button 둥실 효과 */
+    #b_pickme{
+        animation-name: main;
+        animation-duration:1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        }
+
+        @-webkit-keyframes main{
+            0%{
+                top: 50px;
+            }
+            100% {
+                top:70px;
+            }
+        }
+
+        .dummy{
+            padding-top:100%; 
+            /* ratio */
+        }
+
+        /* media query */
+
+        @media only screen and (max-width:600px){
+            #b_main{display: none;}
+
+            #maintitle{font-size: 30px;}
+
+            #subtitle{font-size: 12px;}
+
+            .treemaptext{left: 10%; right: 10%; z-index:0 !important; display: block;}
+
+            .treemap{margin-top: 500px;}
+
+            ul{width: 90%; height: 30px;}
+
+            li{margin:2px; font-size: 8px;}
+
+            .logofix{width: 30%;}
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="logofix"><p>Daily Cub</p></div>
+
+    <div class="maintext">
+        <h1 id="maintitle">다이애나, 그녀는 누구인가</h1><br><br>
+        <p id="subtitle">다이애나, 프린세스 오브 웨일스. 그녀는 영국의 전 왕세자비이자 왕위 계승 서열 2위인 케임브리지 공작 윌리엄(윌리엄 왕세손)과 3위였으나 이제는 세 조카들한테 밀린 6위인 해리 왕자의 친어머니이다.
+
+            1981년 '찰스 왕세자'와 결혼해 영국인은 물론 수많은 사람들의 사랑을 받은 영국의 왕세자비였다. 한국에서는 흔히 다이애나 비(妃)라고 부른다.
+        
+            만약 그녀가 현재까지 생존해 있었다면 58세이다.</p>
+
+        <button type="button" id="b_main"><div class="mouse"></div></button>
+
+    </div>
+
+    <div class="blackpaper"></div>
+
+    <div class="maincover">
+        <div class="mySlides fade" id="diana1"></div> 
+        <div class="mySlides fade" id="diana2"></div> 
+        <div class="mySlides fade" id="diana3"></div> 
+        <div class="mySlides fade" id="diana4"></div> 
+        <div class="mySlides fade" id="diana5"></div> 
+        <div class="mySlides fade" id="diana6"></div> 
+    </div>
+
+    <div class="treemaptext">
+        <h1>영국 왕실 가계도</h1>
+        <br><br><br>
+        <p class="boldp">Do you think you will ever be Queen?</p>
+        <br>
+        <p>여왕이 될 것 같으냐는 질문에, 다이애나는 이렇게 답했다:
+            <br>
+            “아뇨. 못 될 것 같아요. 저는 국민들의 마음 속 여왕이 되고 싶어요. 하지만 이 나라의 여왕은 될 수 없어요. 왕실 사람들은 제가 여왕이 될 수 없다고 이미 결정했어요. 저는 다르기 때문이에요. 저는 규율에 얽매여서 행동을 하지 않거든요. 저는 머리보다 제 마음을 따라 움직여요. 그게 문제가 된다는 것은 이해해요. 하지만 누군가는 국민들에게 보여줘야 한다고 생각해요.”
+        
+        <br><a href="https://www.youtube.com/watch?v=-TTu6uSrSgQ" target="blank">>다이애나 인터뷰 보러가기</a>
+        </p>
+    </div>
+    
+    <div class="treemap">
+        <div class="dummy"></div>
+    </div>
+
+    <div class="footer">
+        <button type="button" id="b_pickme">pick me!<br>010-9467-6273</button>
+    </div>
+
+    <ul>
+        <li>기획: daily cub</li>
+        <li>디자인: daily cub</li>
+        <li>개발: daily cub</li>
+        <li>updated 2020.06.23</li>
+        <li>"사람들이 더 넓은 세상을 알 때까지, Calm Down"</li>
+    </ul>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500); // Change image every 2 seconds
+}
+</script>
+</body>
+
+
+</html>
